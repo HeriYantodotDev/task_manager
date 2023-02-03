@@ -4,8 +4,12 @@
 <% if @page == 1 %>
     <h2>Task List</h2>
 <% end %>
+
 <ul>
 <% @tasks.each do |task|%>
 <li><%= task %></li>
 <% end %>
 </ul>
+
+<br />
+<%= link_to('First task', task_path(1))%>
